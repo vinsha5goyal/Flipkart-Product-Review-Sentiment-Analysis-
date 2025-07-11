@@ -1,12 +1,9 @@
-# Flipkart-Product-Review-Sentiment-Analysis-
-Sentiment analysis of Flipkart product reviews using NLP and ML (Naive Bayes,  Random Forest) with up to 91% accuracy. Includes GUI for live prediction via Streamlit
-Here’s a professional `README.md` file you can include in your GitHub repository for the Flipkart Review Sentiment Analysis project. It explains the project's goal, how it works, and how to run it:
-
 ---
 
 # 📊 Flipkart Product Review Sentiment Analysis
 
-This project analyzes Flipkart product reviews using Natural Language Processing (NLP) and Machine Learning techniques to classify sentiments as **positive** or **negative**. It compares two popular classifiers: **Naive Bayes** and **Random Forest**, visualizes key insights from the data, and highlights important predictive features.
+This project analyzes Flipkart product reviews using Natural Language Processing (NLP) and Machine Learning techniques to classify sentiments as **positive** or **negative**. It compares two popular classifiers: **Naive Bayes** and **Random Forest**, visualizes key insights from the data, and highlights important predictive features.Here’s a professional `README.md` file you can include in your GitHub repository for the Flipkart Review Sentiment Analysis project. It explains the project's goal, how it works, and how to run it:
+
 
 ## 📁 Dataset
 
@@ -72,7 +69,7 @@ pip install -r requirements.txt
 ### 3. Run the script
 
 ```bash
-python sentiment_analysis.py
+python app.py
 ```
 
 Make sure the `flipkart_data.csv` file is in the same directory as the script.
