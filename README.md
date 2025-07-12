@@ -108,7 +108,7 @@ The app will run locally at: `http://localhost:8501`
 
 ---
 
-### 🌐 Web Interface (Optional)
+### 🌐 Web Interface 
 
 To launch from a landing page:
 
