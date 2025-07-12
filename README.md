@@ -1,125 +1,142 @@
----
 
-# 📊 Flipkart Product Review Sentiment Analysis
-
-This project analyzes Flipkart product reviews using Natural Language Processing (NLP) and Machine Learning techniques to classify sentiments as **positive** or **negative**. It compares two popular classifiers: **Naive Bayes** and **Random Forest**, visualizes key insights from the data, and highlights important predictive features.Here’s a professional `README.md` file you can include in your GitHub repository for the Flipkart Review Sentiment Analysis project. It explains the project's goal, how it works, and how to run it:
-
-
-## 📁 Dataset
-
-* `flipkart_data.csv`: Contains user reviews and ratings scraped from Flipkart.
-* Columns used: `review`, `rating`
-
-## 🔧 Tech Stack
-
-* Python (pandas, NumPy, re, nltk)
-* Machine Learning: scikit-learn
-* Visualizations: matplotlib, seaborn, WordCloud
-* NLP: stopword removal, stemming, TF-IDF vectorization
 
 ---
 
-## 🚀 Features
+## 🛒 Flipkart Review Sentiment Analyzer
 
-* Clean and preprocess raw Flipkart reviews
-* Generate Word Clouds for positive and negative sentiments
-* Visualize sentiment distribution using bar and pie charts
-* Train two models: Naive Bayes & Random Forest
-* Display confusion matrices as heatmaps
-* Show most indicative positive/negative words for Naive Bayes
+A machine learning web application that analyzes Flipkart product reviews and predicts whether they are **positive** or **negative**, using **Naive Bayes** and **Random Forest** classifiers.
 
 ---
 
-## 🧠 ML Models Used
+### 📌 Features
 
-| Model            | Accuracy |
-| ---------------- | -------- |
-| ✅ Naive Bayes    | \~91%    |
-| 🌲 Random Forest | \~93%    |
-
-(Note: Accuracy may vary slightly depending on data split and parameters.)
-
----
-
-## 📌 Visualizations
-
-* ✅ WordClouds (Positive & Negative)
-* 📊 Bar Chart: Sentiment Count
-* 🥧 Pie Chart: Sentiment Proportions
-* 📉 Heatmaps: Confusion Matrices
-* 🔤 Top 20 Words (Naive Bayes): Important for each sentiment
+* 🔠 **Text Preprocessing** with stemming and stopword removal
+* 🧠 **ML Models**: Naive Bayes and Random Forest
+* ✨ **TF-IDF Vectorization** of product reviews
+* 🌥️ **Word Clouds** for visual insights
+* 📊 **Sentiment Distribution** using bar and pie charts
+* 📉 **Confusion Matrices** for both classifiers
+* 🟩 **Top Words Visualization** by sentiment
+* 📈 Model Accuracy and Performance Summary
+* 🖥️ Streamlit web interface for ease of use
 
 ---
 
-## 🧪 How to Run
+### 📁 Project Structure
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/flipkart-sentiment-analysis.git
-cd flipkart-sentiment-analysis
+```
+flipkart-sentiment-analyzer/
+│
+├── app.py               # Main Streamlit application
+├── flipkart_data.csv    # Dataset of product reviews and ratings
+├── analysis.py          # (Optional) Data visualizations and exploration
+├── index.html           # Landing page to launch Streamlit app
+├── style.css            # Custom CSS styling for landing page
+└── README.md            # Project overview and instructions
 ```
 
-### 2. Install dependencies
+---
+
+### 🚀 How to Run the Project
+
+#### ✅ Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/your-username/flipkart-sentiment-analyzer.git
+cd flipkart-sentiment-analyzer
+```
+
+#### ✅ Step 2: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the script
+**Or install manually:**
 
 ```bash
-python app.py
+pip install pandas numpy matplotlib seaborn nltk scikit-learn wordcloud streamlit
 ```
 
-Make sure the `flipkart_data.csv` file is in the same directory as the script.
+> Also run this once to download NLTK stopwords:
 
----
-
-## 📁 Project Structure
-
-```
-├── flipkart_data.csv
-├── sentiment_analysis.py
-├── README.md
-└── requirements.txt
+```python
+import nltk
+nltk.download('stopwords')
 ```
 
----
+#### ✅ Step 3: Launch the Streamlit App
 
-## ✅ Output
-
-At the end of the script, you'll see:
-
-* Accuracy results of both models
-* Word clouds
-* Bar and pie charts
-* Confusion matrices
-* Top 20 predictive words for each sentiment
-
----
-
-## 📌 Requirements
-
-You can create a `requirements.txt` like this:
-
-```txt
-pandas
-numpy
-matplotlib
-seaborn
-nltk
-scikit-learn
-wordcloud
+```bash
+streamlit run app.py
 ```
 
----
-
-## ✍️ Author
-
-Vinsha Goyal
-[LinkedIn](#) | [GitHub](https://github.com/your-username)
+The app will run locally at: `http://localhost:8501`
 
 ---
 
+### 🧪 Dataset Details
+
+* Source: Flipkart Product Reviews (sample dataset)
+* Columns:
+
+  * `review`: Text review by the user
+  * `rating`: Numeric star rating (1 to 5)
+
+#### 💡 Sentiment Mapping:
+
+* `Positive` → Ratings **4 and 5**
+* `Negative` → Ratings **1, 2, and 3**
+
+---
+
+### 📊 Output Visualizations
+
+* ✅ Word Cloud for Positive Reviews
+* ❌ Word Cloud for Negative Reviews
+* 📈 Sentiment distribution (bar and pie)
+* 📉 Confusion matrix heatmaps for both models
+* 📌 Top words contributing to predictions
+
+---
+
+### 📌 Accuracy Summary
+
+* **Naive Bayes Accuracy**: \~91%
+* **Random Forest Accuracy**: \~90%
+  *(Exact values will vary based on your dataset split.)*
+
+---
+
+### 🌐 Web Interface (Optional)
+
+To launch from a landing page:
+
+* Open `index.html` in your browser.
+* Click **“Launch App”** to start the Streamlit interface (requires `streamlit run app.py` to be active).
+
+---
+
+### 🛠️ Future Improvements
+
+* Deploy on Streamlit Cloud or Heroku
+* Add review input and live sentiment prediction
+* Multi-language review support
+* Better HTML and CSS interface styling
+
+---
+
+### 📜 License
+
+This project is open-source and free to use under the [MIT License](LICENSE).
+
+---
+
+### 🙌 Acknowledgements
+
+* Flipkart for sample product review data
+* NLTK, Scikit-learn, and Streamlit communities
+* Inspired by real-world e-commerce review analysis systems
+
+---
 
