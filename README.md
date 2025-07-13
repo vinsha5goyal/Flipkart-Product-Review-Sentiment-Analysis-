@@ -22,12 +22,16 @@ A machine learning web application that analyzes Flipkart product reviews and pr
 
 ---
 
-## 📸 Website Preview
+## 📸 Screenshots
 
-Here is how the Flipkart Sentiment Analyzer web app looks:
+### 🟦 Website Interface
+![Website](website.png)
 
-![Website Screenshot](project_screenshots/website/website_screenshots.png)
+### ⌨️ Before Input
+![Before Input](Before_adding_input.png)
 
+### ✅ After Input
+![After Input](After_adding_input.png)
 
 ### 📁 Project Structure
 
