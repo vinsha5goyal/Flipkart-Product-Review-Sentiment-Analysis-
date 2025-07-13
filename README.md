@@ -79,7 +79,7 @@ The app will run locally at: `http://localhost:8501`
 
 ### 🐾 Before_Adding_Input
 
-![Before_Adding_Input](project_screenshots/website)
+![Before_Adding_Input](project_screenshots/website/before_input_screenshot.png)
 
 ### 🧪 Dataset Details
 
