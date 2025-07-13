@@ -75,6 +75,12 @@ The app will run locally at: `http://localhost:8501`
 
 ---
 
+## 📸 Screenshots
+
+### 🐾 Before_Adding_Input
+
+![Before_Adding_Input](project_screenshots/Before_Adding_Input)
+
 ### 🧪 Dataset Details
 
 * Source: Flipkart Product Reviews (sample dataset)
